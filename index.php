@@ -28,7 +28,7 @@ session_start();
 					<th>Title</th>
 					<th>Description</th>
 					<th>Tags</th>
-					<?php if($_SESSION['user_id']>0){ ?>
+					<?php if( !empty($_SESSION['user_id']) && $_SESSION['user_id']>0){ ?>
 					<th>Action</th>
 					<?php } ?>
 				</tr>
